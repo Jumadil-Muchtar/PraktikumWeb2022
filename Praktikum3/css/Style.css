@@ -1,0 +1,17 @@
+.container {
+    text-align: center;
+}
+.navigation-bar {
+    position: sticky;
+}
+.container .row .col li{
+    text-align: center;
+}
+#monsterList {
+    margin-right: 0px;
+    margin-left: 0;
+    background-color: grey;
+}
+#activity {
+    margin: 5px;
+}
