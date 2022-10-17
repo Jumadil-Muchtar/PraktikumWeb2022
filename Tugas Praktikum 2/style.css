@@ -1,0 +1,92 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.topnav {
+    background-color: rgb(205, 205, 205);    
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.topnav .kanan{
+    float: right;
+}
+
+.topnav #mostright{
+    margin-right: 16px;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+}
+
+.kanan:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.container{
+    padding-top: 1px;
+}
+.container .jumbotron{
+    text-align: center;
+    color: white;
+    text-shadow: 5px 5px 15px black;
+    margin: 0;
+    padding: 150px;
+    font-size: 40px;    
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+}
+
+.container .jumbotron:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)) , url(img/bg.jpg);
+}
+
+.subjudul{
+    text-align: center;
+}
+
+.rowcontainer{    
+    padding: 0px 20px;
+}
+
+.row{    
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    border: 0;
+    vertical-align: top;
+    width: 48%;
+    text-align: justify;
+}
+
+.row p{
+    text-indent: 50px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-column-gap: 20px;
+    padding: 0px 20px;
+    text-align: center;
+}
+.gallery img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.gallery img:hover{
+    filter: brightness(150%);
+    box-shadow: 10px 10px 10px grey;
+}
