@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <script>
+        var nama = prompt("Masukkan Nama Anda?", "");
+        var tugas = prompt("Sudah Mengumpulkan tugas Praktikum ? YES atau NO");
+        if(tugas == "NO"){
+            console.log("Jangan Lupa di kerja tugas praktikumnya " + nama)
+        }else if(tugas == "YES"){
+        var asis = prompt("Apakah sudah mengikuti asistensi ? YES atau NO")
+        if(asis == "NO"){
+            console.log("Asistensi Dulu Ya " + nama)
+        }else if(asis=="YES"){
+        var asist = prompt("Sudah Berapa kali asistensi ? 1 atau 2")
+        if(asist ==1){
+            console.log("Asistensi sekali lagi ya " + nama)
+        }else if(asist ==2){
+            console.log("Hebat kamu " + nama + ":)")
+        }else{
+            console.log("Masukkan input yang benar yaitu 1 atau 2")
+        }
+
+        }else{
+            console.log("Masukkan input yang benar yaitu YES atau NO")
+        }
+        }else{
+            console.log("Masukkan input yang benar yaitu YES atau NO")
+        }
+    </script>
+
+
+</body>
+</html>
