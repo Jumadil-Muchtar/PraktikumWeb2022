@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nomor 1</title>
+  <script>
+    const nama = prompt("Masukkan Nama Anda");
+    if (typeof nama ==="string" && nama.trim().length === 0) {
+      alert("⚠️ Masukkan nama anda terlebih dahulu ⚠️")
+  } else {
+    let tuprak = prompt("apakah sudah mengumpulkan Tugas Praktikum? YES atau NO");
+      tuprak = tuprak.toUpperCase();
+      if (tuprak == "YES") {
+        let asistensi = prompt("apakah sudah mengikuti asistensi? YES atau NO");
+        asistensi = asistensi.toUpperCase();
+        if (asistensi == "YES") {
+        const brpasistensi = prompt("Sudah berapa kali asistensi? 1 atau 2");
+        if (brpasistensi == 2) {
+          alert("Wahhh hebat sekali kamu " + nama + "🥳🎉"); 
+        } else if (brpasistensi == 1){
+          alert("Asistensi sekali lagi ya " + nama + "😊.");
+        } else {
+          alert("⚠️Input hanya 1 atau 2⚠️")
+        }
+      } else if (asistensi == "NO"){
+        alert("Asistensi dulu ya " + nama + "😊");
+      } else {
+      alert("⛔ Masukkan inputan yang benar yaitu Yes atau No ⛔");
+      }
+    } else if (tuprak == "NO") {
+      alert("Jangan lupa dikerja tugas praktikumnya " + nama + "😊");
+    } else {
+      alert("⛔ Masukkan inputan yang benar yaitu Yes atau No ⛔");
+    }
+  }
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
