@@ -1,0 +1,51 @@
+.deskripsi {
+  font-weight: 500;
+}
+
+.deskripsi1 {
+  text-align: justify;
+}
+
+.weapon {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.listbow {
+  padding-left: 80px;
+}
+
+.listcatalyst {
+  padding-left: 55px;
+}
+
+.listpolearm {
+  padding-left: 50px;
+}
+
+.listclaymores {
+  padding-left: 55px;
+}
+
+.listsword {
+  padding-left: 55px;
+}
+
+.rowelement {
+  padding-left: 70px;
+  
+}
+.card {
+  width: 220px;
+}
+
+.card-img-top {
+  height: 200px;
+}
+
+.card-text {
+  text-align: center;
+}
+
+.footercontract {
+  font-size: 15px;
+}

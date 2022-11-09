@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(bg-tablepoker.jpg);
+  background-size: cover;
+}
+
+.container {
+  width: 30%;
+  padding: 20px;
+  background-color: rgb(31, 16, 16);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 5px solid burlywood;
+}
+
+h1 {
+  color: burlywood;
+  font-family: 'Cinzel Decorative';
+  font-style: italic;
+}
+
+h5{
+  color: antiquewhite;
+}
+
+p {
+  color: white;
+  font-weight: bold;
+}
+
+input {
+  text-align: center;
+}
+
+.yourCard{
+  color: crimson;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+#form {
+  border-radius: 10px;
+}
+
+#pesan {
+  color: burlywood;
+  font-weight: bolder;
+}

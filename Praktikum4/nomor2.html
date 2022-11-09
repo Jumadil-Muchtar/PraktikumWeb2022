@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nomor 2</title>
+</head>
+<script>
+  let angka = prompt("Perkalian berapa?");
+  let hasil;
+  let hasil_perkalian = 0;
+
+  if (isNaN(angka)) {
+    alert("Input bukan angka!")
+  } else {
+    let perkalian = prompt("Ingin dikalikan sampai berapa?");
+    if (isNaN(perkalian)) {
+      alert("Input bukan angka!")
+    } else{
+      for (i = 1; i <= perkalian; i++){
+          hasil = angka * i;
+          hasil_perkalian += hasil;
+          console.log(i + " x " + angka + " = " + hasil);
+      }
+          console.log("Hasil seluruh perkalian = " + hasil_perkalian);
+    }
+  }
+</script>
+<body>
+</body>
+</html>
