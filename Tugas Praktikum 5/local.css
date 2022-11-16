@@ -1,0 +1,21 @@
+.container-utama {
+    background-image: url(bg.jpg);
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-dalam {
+    transform: translate(0, 40%);
+    width: 500px;
+    margin: auto;
+    padding: 1rem 0;
+    border-radius: 25px;
+}
+
+.input {
+    text-align: center;
+}
+
+.padding-b {
+    padding-bottom: 0.8rem;
+}
