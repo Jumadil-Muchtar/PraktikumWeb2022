@@ -1,0 +1,6 @@
+.container-button{
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto auto;
+    column-gap: 0.3rem;
+}
