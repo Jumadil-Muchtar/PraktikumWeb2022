@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/img/icon.png">
+    <script src="/js/script.js"></script>
+</head>
+<body>
+    <div class="game">
+        <h1>Blackjack</h1>
+        <p>Play a round?</p>
+        <p>AI Cards :</p>
+        <div id="aicard"></div>
+        <p>AI Sums : <span id="AiNilai">0</span></p>
+        <p>Your Cards:</p>
+    </div>
+    <center>
+        <div id="yourcard"></div>
+    </center>
+    <div class="menu">
+        <p>Sums : <span id="Nilai">0</span></p>
+        <div id="winCondition"></div>
+        <p>Jumlah uang anda : Rp <span id="Money">5000</span></p>
+        <input type="number" name="Bet" id="taruhan" value="" placeholder="  Place your bet.."> <br>
+        <button id="StartGame" onclick="StartGame('yourcard')">START GAME</button>
+        <button id="getCard" onclick="getCard('yourcard')" disabled="FALSE">Take a Card</button>
+        <button id="stopCard" onclick="holdCard()" disabled="FALSE">Hold Card</button>
+        <button id="reset" onclick="resetMoney()">Reset Money</button>
+    </div>
+    <div id="CHEAT">
+        <input type="button" value="Create 10000 Money" onclick="createMoney(10000)">
+    </div>
+</body>
+</html>
