@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family:'Trebuchet MS', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+h5 {
+    color: white;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: black;
+}
+
+.navbar img {
+    width: 5vw;
+}
+
+
+.d-block {
+    height: 800px;
+}
+
+.badge {
+    background-color: black;
+}
+
+.list-container ul,
+h3 {
+    color: black;
+}
+
+.footer-container {
+    background-color: black;
+}
+
+.footer-container a:hover {
+    background-color: rgba(165, 165, 165, 0.408);
+}
