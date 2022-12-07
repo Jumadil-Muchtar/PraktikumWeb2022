@@ -1,62 +1,6 @@
 # Release Notes for 9.x
 
-## [Unreleased](https://github.com/laravel/framework/compare/v9.41.0...9.x)
-
-
-## [v9.41.0](https://github.com/laravel/framework/compare/v9.40.1...v9.41.0) - 2022-11-22
-
-### Added
-- Added `Illuminate/Validation/Rules/DatabaseRule::onlyTrashed()` ([#44989](https://github.com/laravel/framework/pull/44989))
-- Add some class rules in class Rule ([#44998](https://github.com/laravel/framework/pull/44998))
-- Added `Illuminate/View/ComponentAttributeBag::missing()` ([#45016](https://github.com/laravel/framework/pull/45016))
-- Added `Illuminate/Http/Concerns/InteractsWithInput::whenMissing()` ([#45019](https://github.com/laravel/framework/pull/45019))
-- Add isolation levels to SQL Server Connector ([#45023](https://github.com/laravel/framework/pull/45023))
-- Fix php artisan serve with PHP_CLI_SERVER_WORKERS > 1 ([#45041](https://github.com/laravel/framework/pull/45041))
-- Add ability to prune cancelled job batches ([#45034](https://github.com/laravel/framework/pull/45034))
-- Adding option for custom manifest filename on Vite Facade ([#45007](https://github.com/laravel/framework/pull/45007))
-
-### Fixed
-- Fix deprecation warning when comparing a password against a NULL database password ([#44986](https://github.com/laravel/framework/pull/44986), [206e465](https://github.com/laravel/framework/commit/206e465f9680ef4618009ddfeafa672f8015a511))
-- Outlook web dark mode email layout fix ([#45024](https://github.com/laravel/framework/pull/45024))
-
-### Changed
-- Improves queue:work command output ([#44971](https://github.com/laravel/framework/pull/44971))
-- Optimize Collection::containsStrict ([#44970](https://github.com/laravel/framework/pull/44970))
-- Make name required in `Illuminate/Testing/TestResponse::assertRedirectToRoute()` ([98a0301](https://github.com/laravel/framework/commit/98a03013ed74925f68040beee0937203b632f57d))
-- Strip key, secret and token from root config options on aws clients ([#44979](https://github.com/laravel/framework/pull/44979))
-- Allow customised implementation of the SendQueuedMailable job ([#45040](https://github.com/laravel/framework/pull/45040))
-- Validate uuid before route binding query ([#44945](https://github.com/laravel/framework/pull/44945))
-
-
-## [v9.40.1](https://github.com/laravel/framework/compare/v9.40.0...v9.40.1) - 2022-11-15
-
-### Added
-- `Illuminate/Support/Lottery::fix()` ([7bade4f](https://github.com/laravel/framework/commit/7bade4f486e7b600cc9a5d527fcfd85ead1e17db))
-
-
-## [v9.40.0](https://github.com/laravel/framework/compare/v9.39.0...v9.40.0) - 2022-11-15
-
-### Added
-- Include Eloquent Model Observers in model:show command ([#44884](https://github.com/laravel/framework/pull/44884))
-- Added "lowercase" validation rule ([#44883](https://github.com/laravel/framework/pull/44883))
-- Introduce `Lottery` class ([#44894](https://github.com/laravel/framework/pull/44894))
-- Added `/Illuminate/Testing/TestResponse::assertRedirectToRoute()` ([#44926](https://github.com/laravel/framework/pull/44926))
-- Add uppercase validation rule ([#44918](https://github.com/laravel/framework/pull/44918))
-- Added saveManyQuietly to the hasOneOrMany and belongsToMany relations ([#44913](https://github.com/laravel/framework/pull/44913))
-
-### Fixed
-- Fix HasAttributes::getMutatedAttributes for classes with constructor args ([#44829](https://github.com/laravel/framework/pull/44829))
-
-### Changed
-- Remove argument assignment for console ([#44888](https://github.com/laravel/framework/pull/44888))
-- Pass $maxExceptions from mailable to underlying job when queuing ([#44903](https://github.com/laravel/framework/pull/44903))
-- Make Vite::isRunningHot public ([#44900](https://github.com/laravel/framework/pull/44900))
-- Add method to be able to override the exception context format ([#44895](https://github.com/laravel/framework/pull/44895))
-- Add zero-width space to trimmed characters in TrimStrings middleware ([#44906](https://github.com/laravel/framework/pull/44906))
-- Show error if key:generate artisan command fails ([#44927](https://github.com/laravel/framework/pull/44927))
-- Update database version check for lock popping for PlanetScale ([#44925](https://github.com/laravel/framework/pull/44925))
-- Move function withoutTrashed into DatabaseRule ([#44938](https://github.com/laravel/framework/pull/44938))
-- Use write connection on Schema::getColumnListing() and Schema::hasTable() for MySQL and PostgreSQL ([#44946](https://github.com/laravel/framework/pull/44946))
+## [Unreleased](https://github.com/laravel/framework/compare/v9.39.0...9.x)
 
 
 ## [v9.39.0](https://github.com/laravel/framework/compare/v9.38.0...v9.39.0) - 2022-11-08

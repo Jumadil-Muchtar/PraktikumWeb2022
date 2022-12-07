@@ -23,7 +23,7 @@
             padding-top: 10px;
         }
         .page{
-            text-align: center;
+            margin-left: 420px;
         }
     </style>
 </head>
@@ -57,9 +57,9 @@
                 @php
                     $id = 1;
                 @endphp
-                @foreach ($data as $row)
+                @foreach ($data as $index => $row)
                 <tr>
-                    <th scope="row">{{ $id++ }}</th>
+                    <th scope="row">{{ $index +$data->firstItem() }}</th>
                     <td> {{ $row->Nim }} </td>
                     <td> {{ $row->Nama }} </td>
                     <td> {{ $row->Alamat }} </td>
@@ -75,9 +75,9 @@
             </table>
         </div>
 </div> 
-
+<div class="page">
   {{ $data->links() }}
-
+</div>
 <script>
     $('.delete').click(function () 
     {

@@ -11,14 +11,13 @@ _sf_{{ COMMAND_NAME }}() {
     local sf_cmd="${COMP_WORDS[0]}"
 
     # for an alias, get the real script behind it
-    sf_cmd_type=$(type -t $sf_cmd)
-    if [[ $sf_cmd_type == "alias" ]]; then
+    if [[ $(type -t $sf_cmd) == "alias" ]]; then
         sf_cmd=$(alias $sf_cmd | sed -E "s/alias $sf_cmd='(.*)'/\1/")
-    elif [[ $sf_cmd_type == "file" ]]; then
+    else
         sf_cmd=$(type -p $sf_cmd)
     fi
 
-    if [[ $sf_cmd_type != "function" && ! -x $sf_cmd ]]; then
+    if [ ! -x "$sf_cmd" ]; then
         return 1
     fi
 

@@ -258,7 +258,7 @@ class Mailable implements MailableContract, Renderable
      */
     protected function newQueuedJob()
     {
-        return Container::getInstance()->make(SendQueuedMailable::class, ['mailable' => $this])
+        return (new SendQueuedMailable($this))
                     ->through(array_merge(
                         method_exists($this, 'middleware') ? $this->middleware() : [],
                         $this->middleware ?? []
@@ -688,11 +688,6 @@ class Mailable implements MailableContract, Renderable
                 'address' => $recipient->email,
             ];
         }
-
-        $this->{$property} = collect($this->{$property})
-            ->unique('address')
-            ->values()
-            ->all();
 
         return $this;
     }
