@@ -37,12 +37,11 @@
             Data Mahasiswa
         </div>
         <div class="card-body">
-            <?php if($message = Session::get('success')): ?>
+            @if($message = Session::get('success'))
                 <div class="alert alert-success" role="alert">
-                    <?php echo e($message); ?>
-
+                    {{ $message }}
                 </div>
-            <?php endif; ?>
+            @endif
             <table class="table">
                 <thead>
                     <tr>
@@ -55,30 +54,29 @@
                     </tr>
                 </thead>
                 <tbody>
-                <?php
+                @php
                     $id = 1;
-                ?>
-                <?php $__currentLoopData = $data; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $row): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                @endphp
+                @foreach ($data as $row)
                 <tr>
-                    <th scope="row"><?php echo e($id++); ?></th>
-                    <td> <?php echo e($row->Nim); ?> </td>
-                    <td> <?php echo e($row->Nama); ?> </td>
-                    <td> <?php echo e($row->Alamat); ?> </td>
-                    <td> <?php echo e($row->Fakultas); ?> </td>
+                    <th scope="row">{{ $id++ }}</th>
+                    <td> {{ $row->Nim }} </td>
+                    <td> {{ $row->Nama }} </td>
+                    <td> {{ $row->Alamat }} </td>
+                    <td> {{ $row->Fakultas }} </td>
                     <td>
-                        <a href="#" class="btn btn-danger delete" data-id="<?php echo e($row->id); ?>" data-nama="<?php echo e($row->Nama); ?>"> Delete </button>
-                        <a href="/tampilkandata/<?php echo e($row->id); ?>"> <button type="button" class="btn-warning"> Edit </button> </a>
+                        <a href="#" class="btn btn-danger delete" data-id="{{ $row->id }}" data-nama="{{ $row->Nama }}"> Delete </button>
+                        <a href="/tampilkandata/{{ $row->id }}"> <button type="button" class="btn-warning"> Edit </button> </a>
                     </td>
                 </tr> 
-                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                @endforeach
                    
                 </tbody>
             </table>
         </div>
 </div> 
 
-  <?php echo e($data->links()); ?>
-
+  {{ $data->links() }}
 
 <script>
     $('.delete').click(function () 
@@ -111,4 +109,4 @@
 </script>
 
 </body>
-</html><?php /**PATH C:\xampp\htdocs\tugas-laravel1\resources\views/datamahasiswa.blade.php ENDPATH**/ ?>
+</html>
