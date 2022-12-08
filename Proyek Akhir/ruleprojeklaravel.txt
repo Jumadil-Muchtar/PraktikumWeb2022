@@ -14,7 +14,7 @@ Adapun pembahasan di dalam video yaitu :
 
 
 Penilaian Proyek Akhir:
-1. Tampilan Website (Front-End)
+1. Tampilan Website (Front-End) , bisa menggunakan template namun akan lebih baik jika membuatnya sendiri.
 2. Banyak syarat/fitur yang telah dibuat (Point Terbesar di sini)
 3. Clean Code (Codingannya Benar dan Rapi)
 4. Bisa di deploy (hosting) - Opsional
@@ -22,4 +22,3 @@ Penilaian Proyek Akhir:
 
 Catatan:
 Apabila sulit untuk menyelesaikan syarat/fiturnya, kalian bisa menambahkan syarat/fitur lain (selain syarat/fitur yang ada modul). Akan tetapi tambahan nilai kecil, dibandingkan jika menyelesaikan syarat/fitur pada modul. Kecuali fitur baru yang di buat lebih bagus dan lebih bermanfaat dari fitur sebelumnya. 
-
