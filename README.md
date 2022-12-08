@@ -10,6 +10,6 @@ Dengan susunan direktori
 - Praktikum 7
 - Praktikum 8
 - Praktikum 9
-- Projek
+- Proyek Akhir
 
 
