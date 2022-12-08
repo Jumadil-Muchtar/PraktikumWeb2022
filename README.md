@@ -1,5 +1,15 @@
 # Praktikum Web 2022
-Silahkan kumpul folder tugasnya dengan format nama folder Nim_Nama_NamaGrup.
-Isi dari folder tersebut adalah folder Praktikum1, Praktikum2, ..., Praktikum3.
-Kemudian isi folder Praktikum1 adalah file tugas praktikum.
+Silahkan kumpul Tugas Praktikum 1 - 9 dan tugas Projectnya, paling lambat hari Minggu Pukul 23:59 
+Dengan susunan direktori 
+- Praktikum 1
+- Praktikum 2
+- Praktikum 3
+- Praktikum 4
+- Praktikum 5
+- Praktikum 6
+- Praktikum 7
+- Praktikum 8
+- Praktikum 9
+- Projek
+
 
