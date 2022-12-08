@@ -1,6 +1,6 @@
-Projek Akhir 
+Projek Akhir Praktikum Pemrograman WEB 2022
 
-Pada projek akhir ini, praktikan dituntut untuk mengerjakan projek akhir dengan tema yang telah ditentukan oleh asisten secara acak. Projek akhir ini dikerjakan menggunakan HTML, CSS, Javascript, PHP dan Laravel. Sesuai dengan materi-materi yang telah dipelajari pada praktikum-praktikum sebelumnya.
+Pada projek akhir ini, praktikan dituntut untuk mengerjakan projek akhir dengan tema yang telah ditentukan oleh asisten secara acak. Projek akhir ini dikerjakan menggunakan HTML, CSS, Bootstrap, Javascript, PHP dan Laravel. Sesuai dengan materi-materi yang telah dipelajari pada praktikum-praktikum sebelumnya.
 
 Adapun output dari projek ini adalah sebuah web yang dilengkapi dengan CMS (Content Management System). Nantinya projek ini akan dipresentasikan dalam bentuk video yang berdurasi maksimal 20 menit. Video tersebut diupload ke youtube sesuai format berikut.
 
@@ -17,8 +17,9 @@ Penilaian Proyek Akhir:
 1. Tampilan Website (Front-End)
 2. Banyak syarat/fitur yang telah dibuat (Point Terbesar di sini)
 3. Clean Code (Codingannya Benar dan Rapi)
-4. Bisa di deploy (hosting)
-5. Codingan yang sama dengan presentasi lebih dari 50%, akan mengalami penurunan nilai dan berpotensi untuk ditolak. 
+4. Bisa di deploy (hosting) - Opsional
+5. Codingan yang sama antar praktikan dengan persentase lebih dari 50%, akan mengalami penurunan nilai dan berpotensi untuk ditolak. 
 
 Catatan:
 Apabila sulit untuk menyelesaikan syarat/fiturnya, kalian bisa menambahkan syarat/fitur lain (selain syarat/fitur yang ada modul). Akan tetapi tambahan nilai kecil, dibandingkan jika menyelesaikan syarat/fitur pada modul. Kecuali fitur baru yang di buat lebih bagus dan lebih bermanfaat dari fitur sebelumnya. 
+
