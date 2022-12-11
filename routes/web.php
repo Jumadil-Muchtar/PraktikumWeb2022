@@ -1,7 +1,7 @@
 <?php
 
+use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\MahasiswaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,14 +12,9 @@ use App\Http\Controllers\MahasiswaController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/mahasiswa', [MahasiswaController::class, 'mahasiswa'])->name('mahasiswa');
-Route::get('/tambahmahasiswa', [MahasiswaController::class, 'tambahmahasiswa'])->name('tambahmahasiswa');
-// yang nama dalam / get itu nama sembarangji tapi saya ku kasih sama dengan nama file ku
-Route::post('/insertdata', [MahasiswaController::class, 'insertdata'])->name('insertdata');
-Route::get('/tampilkandata/{id}', [MahasiswaController::class, 'tampilkandata'])->name('tampilkandata');
-Route::post('/updatedata/{id}', [MahasiswaController::class, 'updatedata'])->name('updatedata');
-Route::get('/deletedata/{id}', [MahasiswaController::class, 'deletedata'])->name('deletedata');
+Route::get('/', 'App\Http\Controllers\ProductController@index');
+Route::resource('sellers','App\Http\Controllers\SellerController');
+Route::resource('categories','App\Http\Controllers\CategoryController');
+Route::resource('permissions','App\Http\Controllers\PermissionController');
+Route::resource('products','App\Http\Controllers\ProductController');
+Route::resource('seller-permissions','App\Http\Controllers\SellerPermissionController');

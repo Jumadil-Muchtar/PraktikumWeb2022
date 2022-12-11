@@ -4,7 +4,6 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Mahasiswa;
 
 class DatabaseSeeder extends Seeder
 {
@@ -15,12 +14,15 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        \App\Models\Seller::factory(20)->create();
+        \App\Models\Category::factory(5)->create();
+        \App\Models\Permission::factory(4)->create();
+        \App\Models\Product::factory(90)->create();
+        \App\Models\Seller_permission::factory(10)->create();
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
-        Mahasiswa::factory(1000)->create();
     }
 }
