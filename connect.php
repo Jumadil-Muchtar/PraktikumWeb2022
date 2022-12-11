@@ -1,29 +1,27 @@
 <?php
-
 session_start();
 
-class Connection{
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "login";
-$port = 3307;
-
-public function __construct()
+class Connection
 {
-    $this->conn = mysqli_connect($this->host, $this->user, $this->pass, $this->db, $this->port);
-}
+    public $username = "localhost";
+    public $servername = "root";
+    public $password = "";
+    public $dbname = "data_mahasiswa";
+    public $port = 3307;
 
-public function getConn(){
-    return $this->conn;
-}
+    public function __construct()
+    {
+        $this->conn = mysqli_connect($this->username, $this->servername, $this->password, $this->dbname);
+    }
 
+    public function getConn(){
+        return $this->conn;
+    }
 }
 
 class Auth extends Connection{
 
-    public function registration($username, $email, $password, $cpassword)
+    public function registration($username, $email, $password, $confirmpassword)
     {
 
         $sql = "SELECT * FROM users WHERE email='$email'";
@@ -34,7 +32,7 @@ class Auth extends Connection{
             //email sdh ada
 
         } else {
-            if ($password == $cpassword) {
+            if ($password == $confirmpassword) {
                 $sql = "INSERT INTO users (username, email, password)
 					VALUES ('$username', '$email', '$password')";
                 $result = mysqli_query($this->conn, $sql);
@@ -46,7 +44,6 @@ class Auth extends Connection{
             }
         }
     }
-
     public function login($email, $password)
     {
         $sql = "SELECT * FROM users WHERE email='$email' AND password='$password'";
@@ -73,11 +70,6 @@ class Auth extends Connection{
     {
         return $this->id;
     }
-
-    public function idUser()
-    {
-        return $this->id;
-    }
     public function logout()
     {
         session_start();
@@ -93,22 +85,24 @@ class Data extends Connection
     public $nim         = "";
     public $address     = "";
     public $faculty     = "";
+    public $activity    = "";
     public $success     = "";
     public $error       = "";
     public $id          = "";
 
     public function insert(){
-        $name           = $_POST['name'];
-        $nim            = $_POST['nim'];
-        $address        = $_POST['address'];
-        $faculty        = $_POST['faculty'];
+        $name        = $_POST['name'];
+        $nim         = $_POST['nim'];
+        $address     = $_POST['address'];
+        $faculty     = $_POST['faculty'];
+        $activity    = $_POST['activity'];
 
-        $result = mysqli_query($this->conn, "select * from mahasiswa where name = '$name'");
+        $result = mysqli_query($this->conn, "select * from data_mahasiswa where name = '$name'");
         $num_rows = mysqli_num_rows($result);
         if ($num_rows) {
             return false;
         } else {
-            $sql1   = "insert into mahasiswa(name,nim,address,faculty) values ('$name','$nim','$address','$faculty')";
+            $sql1   = "insert into data_mahasiswa(name,nim,address,faculty) values ('$name','$nim','$address','$faculty','$activity')";
             $q1     = mysqli_query($this->conn, $sql1);
             if ($q1) {
                 return true;
@@ -120,7 +114,7 @@ class Data extends Connection
 
     public function delete($id){
       
-        $sql1       = "delete from mahasiswa where id = '$id'";
+        $sql1       = "delete from data_mahasiswa where id = '$id'";
         $q1         = mysqli_query($this->conn, $sql1);
         if ($q1) {
             
@@ -131,15 +125,15 @@ class Data extends Connection
     }
 
     public function edit($id){
-        $sql1       = "select * from mahasiswa where id = '$id'";
+        $sql1       = "select * from data_mahasiswa where id = '$id'";
         $q1         = mysqli_query($this->conn, $sql1);
         $r1         = mysqli_fetch_assoc($q1);
          return $r1;
        
     }
 
-    public function update($id, $name, $nim, $address, $faculty) {
-        $sql1       = "update mahasiswa set name = '$name',nim='$nim',address = '$address',faculty='$faculty' where id = '$id'";
+    public function update($id, $name, $nim, $address, $faculty, $activity) {
+        $sql1       = "update data_mahasiswa set name = '$name',nim='$nim',address = '$address',faculty='$faculty',activity='$activity', where id = '$id'";
         $q1         = mysqli_query($this->conn, $sql1);
         if ($q1) {
             return true;
@@ -150,7 +144,7 @@ class Data extends Connection
 
     public function tampil(){
             $isi = null;
-        $sql2   = "select * from mahasiswa order by id asc";
+        $sql2   = "select * from data_mahasiswa order by id asc";
         if ($q2  = $this->conn->query($sql2)) {
             while ($row = mysqli_fetch_assoc($q2)) {
                 $isi[] = $row;
@@ -159,3 +153,17 @@ class Data extends Connection
         return $isi;
     }
 }
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Mahasiswa</title>
+</head>
+<body>
+    
+</body>
+</html>

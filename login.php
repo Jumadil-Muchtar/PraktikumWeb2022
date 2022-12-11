@@ -2,7 +2,9 @@
 
 require 'connect.php';
 
+
 $login = new Auth();
+
 
 if (isset($_POST['submit'])) {
 	$result = $login->login($_POST["email"], md5($_POST['password']));
@@ -11,7 +13,7 @@ if (isset($_POST['submit'])) {
 		$_SESSION["login"] = true;
 		$_SESSION["id"] = $login->idUser();
 		$_SESSION['username'] = $result['data']['username'];
-		header("Location: mahasiswa.php");
+		header("Location: data_mahasiswa.php");
 	} else if ($result['id'] == 2) {
 		echo
 		"<script> alert('Wrong Password or Email'); </script>";
