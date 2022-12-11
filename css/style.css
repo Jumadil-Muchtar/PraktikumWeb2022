@@ -1,0 +1,12 @@
+#success {
+    display: none;
+}
+#failed {
+    display:none;
+}
+#addData {
+    display: inherit;
+}
+#editData {
+    display: none;
+}
