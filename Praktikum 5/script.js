@@ -60,7 +60,7 @@ function renderGame() {
     } else if (sum === 21) {
         message = "You've Got Blackjack!";
         hasBlackJack = true;
-        player.chips += bet.value * 2;
+        player.chips += bet.value * 5;
         walletEl.innerText = player.name + ": $" + player.chips;
     } else {
         disableButtonTake();
