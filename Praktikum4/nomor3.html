@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>H071211034-Muhammad Nuril Muqit</title>
+    <body>
+      <script>
+        var text = prompt("masukkan kalimat..");
+        var letter = text.split("");
+        var count = {};
+
+        for (var i = 0; i < text.length; i++) {
+          if (count[letter[i]] == undefined) 
+          count[letter[i]] = 0;
+          count[letter[i]]++;
+        }
+        for (var i in count) {
+          if (i == " ") {
+            console.log("spasi = " + count[i]);
+          } else {
+            console.log(i + " = " + count[i]);
+          }
+        }
+      </script>
+    </body>
+  </head>
+</html>

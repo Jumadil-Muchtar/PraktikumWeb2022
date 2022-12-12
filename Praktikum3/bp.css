@@ -1,0 +1,38 @@
+
+
+.deskripsi{
+    background: linear-gradient(360deg, hsla(37, 90%, 51%, 1) 0%, hsla(3, 90%, 19%, 1) 51%, hsla(37, 90%, 51%, 1) 100%);
+}
+
+.skil1{
+    padding-bottom: 60px;
+    padding-top: 20px;
+    margin-top: -1px;
+    background: linear-gradient(360deg, hsla(3, 90%, 19%, 1) 0%, hsla(37, 90%, 51%, 1) 100%);
+
+}
+.Grid-text{
+    padding-bottom: 150px;
+}
+
+.warna ul{
+    color: white;
+}
+
+.Cardphoto{
+    background: linear-gradient(360deg, hsla(3, 90%, 19%, 1) 0%, hsla(37, 90%, 51%, 1) 51%, hsla(3, 90%, 19%, 1) 100%);
+    padding-bottom: 80px;
+    padding-top: 50px;
+}
+
+.card1 {
+    margin-bottom: -5px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: linear-gradient(360deg, hsla(3, 90%, 19%, 1) 0%, hsla(37, 90%, 51%, 1) 51%, hsla(3, 90%, 19%, 1) 100%);
+}
+
+.li1 li {
+    margin-left: 1em;
+    list-style: none;
+}

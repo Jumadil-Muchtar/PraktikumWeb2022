@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>H071211034-Muhammad Nuril Muqit</title>
+    <body>
+        <!-- penjumlahan -->
+      <script>
+        var a = prompt("Perkalian berapa?");
+        a = Number(a);
+        if (isNaN(a)) {
+          console.log("Yang diinput bukan angka");
+        } else {
+          var b = prompt("Ingin dikalikan sampai berapa?");
+          b = Number(b);
+          if (isNaN(b)) {
+            console.log("Yang diinput bukan angka");
+          } else {
+            for (let i = 1; i <= b; i++) {
+              let total = i + a;
+              console.log(i + " + " + a + " = " + total);
+            }
+          }
+        }
+      </script>
+    </body>
+  </head>
+</html>

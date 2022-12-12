@@ -1,0 +1,94 @@
+body {
+    font-family: 'PT Serif';
+    background-image: radial-gradient(#2a7a08, #226108, #0f3300);
+}
+
+h1 {
+    color: #ffffff;
+}
+
+.logo {
+    width: 60px;
+}
+
+.bet-box {
+    min-height: 240px;
+    min-width: 100px;
+    background: #ffffff;
+    border-radius: 15px 15px 0 0;
+}
+
+.btn-start {
+    width: 110px;
+    height: 40px;
+    background: #7dad69;
+    border: 1px solid #7dad69;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+.btn-start:hover {
+    background: #2a7a08;
+}
+
+.btn-max {
+    width: 110px;
+    height: 40px;
+    background: #e4be77;
+    border: 1px solid #e4be77;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+.btn-max:hover {
+    background: #e5a01f;
+}
+
+.btn-saldo {
+    width: 110px;
+    height: 40px;
+    background: #de7a6f;
+    border: 1px solid #de7a6f;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+.btn-saldo:hover {
+    background: #d44838;
+}
+
+.game-box {
+    min-height: 390px;
+    min-width: 100px;
+    background: #ffffff;
+    border-radius: 0 0 15px 15px;
+}
+
+#dealer-cards img {
+    width: 7rem;
+    margin: 20px 3px;
+}
+
+#your-cards img {
+    width: 7rem;
+    margin: 20px 3px;
+}
+
+#stock img {
+    width: 7rem;
+    margin: 20px 3px;
+}
+
+.btn-game {
+    border: 1px solid #000000;
+    border-radius: 8px;
+    background: transparent;
+    width: 110px;
+    height: 40px;
+}
+
+.btn-game:hover {
+    background: #226108;
+    color: #ffffff;
+}
+
