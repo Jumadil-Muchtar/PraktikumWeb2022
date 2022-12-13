@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    background-color:silver;
+  }
+  .header li {
+    float: left;
+  }
+  
+  .header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+  
+  /* .nav {
+    float: right;
+  } */
+  
+  .jumbo {
+    background-image: url(IMG_2029.JPG);
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .jumbo h1 {
+    font-size: 100px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: burlywood;
+  }
+  
+  .tittle1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin-bottom: 0px;
+  }
+  
+  .desc {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .desctext {
+    text-align: center;
+    margin: 25px;
+    width: 500px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  img {
+    width: 250px;
+  }
+  
+  .tittle2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  
+  .tittle3 {
+    text-align: center;
+  }
+  
+  .inti {
+    display: flex;
+  }
+  
+  .subinti {
+    margin: 20px;
+    text-align: left;
+  }
+  
+  .subinti a img {
+    border: 3px solid black;
+  }
+  
+  .coba {
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+  }
+  
+  hr {
+    background-color:#333;
+    height: 2px;
+  }
+  
+  .paragh table {
+    margin: 0px;
+    padding: 0px;
+  }
