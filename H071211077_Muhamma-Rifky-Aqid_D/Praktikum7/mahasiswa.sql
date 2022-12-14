@@ -1,0 +1,18 @@
+CREATE DATABASE mahasiswa;
+USE  mahasiswa;
+CREATE TABLE mahasiswa2 (
+	id INT(11)  NOT NULL AUTO_INCREMENT,
+	nama VARCHAR(100) NOT NULL,
+	nim CHAR(10) NOT NULL,
+	alamat VARCHAR(100) NOT NULL,
+	fakultas VARCHAR(100) NOT NULL,
+	PRIMARY KEY(id)
+);
+
+CREATE TABLE users (
+	id INT(11) NOT NULL AUTO_INCREMENT,
+	username VARCHAR(50) NOT NULL,
+	password VARCHAR(255) NOT NULL,
+	PRIMARY KEY(id)
+);
+

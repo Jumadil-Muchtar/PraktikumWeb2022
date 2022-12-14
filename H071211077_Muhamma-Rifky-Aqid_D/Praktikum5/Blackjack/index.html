@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inspiration&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-4"><img class="logo" src="./logo/spade-ace.png">Blackjack</h1>
+        <div class="d-flex justify-content-center bet-box mt-5">
+            <section id="betting">
+                <h2 class="text-center mt-3 fs-4">Balance : $<span id="mybalance">5000</span></h2>
+                <div class="mt-4 d-inline-flex justify-content-center ms-5">
+                    <label class="form-label me-4">Your Bet :</label>
+                    <input type="number" placeholder="$bet" name="mybet" id="mybet" class="form-control w-50">
+                </div>
+                <div class="text-center my-2">
+                    <p id="bet-message"></p>
+                </div>
+                <div class="mt-4 d-flex justify-content-center">
+                    <button id="start-btn" class="btn-start" onclick="start()" disabled="disabled">Start</button>
+                    <button id="start-again" class="btn-start d-none" onclick="restart()" disabled="disabled">Start Again</button>
+                    <button class="btn-max ms-2" onclick="maxbet()">All-in</button>
+                    <button class="btn-saldo ms-2" onclick="window.location.reload()">Reset</button>
+                </div>
+            </section>
+        </div>
+        <div id="game" class="game-box mt-2" style="display: none">
+            <section>
+                <div class="row">
+                    <div class="col-6 margin-content text-center">
+                        <h2 class="fs-5 mt-4 mb-3">You : <span id="your-sum"></span></h2>
+                        <div id="your-cards"></div>
+                    </div>
+                    <div class="col-6 margin-content text-center">
+                        <h2 class="fs-5 mt-4 mb-3">Dealer: <span id="dealer-sum"></span></h2>
+                        <div id="dealer-cards">
+                            <img id="hidden" src="./cards/BACK.png">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-center fs-6 mt-2 text-dark" id="results"></p>
+                </div>
+                <div class="mt-2 d-flex justify-content-center">
+                    <button id="hit" class="btn-game ms-2 mt-2 p-2">Hit</button>
+                    <button id="stay" class="btn-game ms-2 mt-2 p-2">Stay</button>
+                    <!-- <button id="restart" class="btn-game ms-2 mt-2 p-2" onclick="">Play Again</button> -->
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <!-- <script src="betting.js"></script> -->
+</body>
+</html>
