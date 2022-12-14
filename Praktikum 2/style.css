@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+}
+/*navbar*/
+nav{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    background-color:#3f2343;
+    padding: 20px 0;
+    
+}       
+nav ul{
+    list-style: none;
+    
+    
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 0.9em;
+    color: aliceblue;
+    float:right;
+    margin-left: 5px;
+    margin-right: 30px;
+    
+}
+.brand{
+    float:left;
+    font-family: 'Noto Sans Mono', monospace;
+    color: aliceblue;
+    padding-left: 20px;
+}
+.h1{
+    background-color: #323339;
+    font-size: 3em;
+    text-align: center;
+    margin: auto;
+    height: 30px;
+    padding: 150px;
+}
+.p1 {
+    float: left;
+    width:500px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 150px;
+    text-align: justify;
+    color:rgb(255, 252, 247);
+    text-indent: 30px;
+  }
+  .p2 {
+    float: left;
+    width:500px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 150px;
+    text-align: justify;
+    color:rgb(255, 253, 251);
+    text-indent: 30px;
+  }
+  .p3 {
+    float: left;
+    width:500px;
+    margin-top: 50px;
+    margin-right: 10px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    color:rgb(255, 242, 227);
+    text-align: justify;
+    text-indent: 30px;
+  }
+  .p4{
+    text-indent: 30px;
+    width:500px;
+    float: left;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    text-align: justify;
+    color:rgb(250, 249, 249);
+  }
+.pendo{
+    color:rgb(249, 245, 240);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    text-align: center;
+}
+.gallery {
+  margin: 5px;
+  border: 1px solid rgb(255, 253, 250);
+  float: left;
+  width: 243px;
+  margin-left: 20px;
+}
+
+.gallery:hover {
+  border: 1px solid darkorange;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+}
+
+.desc {
+  font-family: 'Ubuntu', sans-serif;
+  padding: 15px;
+  text-align: center;
+  color:whitesmoke;
+}
+.clear {
+  clear:both;
+}
+.skin {
+display:inline-block;
+margin: 10px 120px;
+
+}
+.paragrap{
+  margin: 10px 90px;
+}
