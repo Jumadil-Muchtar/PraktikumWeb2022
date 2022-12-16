@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+    crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Roboto&family=Roboto+Condensed&family=Viga&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><b class="text-success">Rezza</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+              href="https://id.wikipedia.org/wiki/Bunga_matahari#:~:text=Bunga%20matahari%20(Helianthus%20annuus%20L,diameter%20bisa%20mencapai%2030%20cm).">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Link
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item " href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </ul>
+        <form class="d-flex bg-light" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Carousel -->
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="img/Floweer.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="text-light">Bunga</h5>
+          <p class="text-light">Keadaan</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="img/Matahari.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Matahari</h5>
+          <p>Kecil.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/Sun.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Sun</h5>
+          <p>SunFlower.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Grid -->
+  <br>
+  <h1 class="h1">Bunga Matahari</h1>
+  <br><br>
+  <div class="container">
+    <div class="row text-justify">
+      <div class="col-lg-6">
+        <p>Bunga matahari (Helianthus annuus L.) adalah tumbuhan semusim dari suku kenikir-kenikiran (Asteraceae) yang
+          populer, baik sebagai tanaman hias maupun tanaman penghasil minyak. Bunga tumbuhan ini sangat khas: besar,
+          biasanya berwarna kuning terang, dengan kepala bunga yang besar (diameter bisa mencapai 30 cm).[1] Bunga ini
+          sebetulnya adalah bunga majemuk, tersusun dari ratusan hingga ribuan bunga kecil pada satu bongkol. Bunga
+          Matahari juga memiliki perilaku khas, yaitu bunganya selalu menghadap / condong ke arah matahari atau
+          heliotropisme. Orang Prancis menyebutnya tournesol atau "pengelana Matahari". Namun, sifat ini disingkirkan
+          pada berbagai kultivar baru untuk produksi minyak karena memakan banyak energi dan mengurangi hasil.
+          Bunga matahari merupakan bunga nasional Ukraina dan bunga resmi negara bagian Kansas, Amerika Serikat.</p>
+      </div>
+      <div class="col-lg-6">
+        <p>Bunga matahari merupakan tumbuhan terna semusim yang berasal dari Amerika Tropik bagian utara (Meksiko),
+          tinggi 3m sampai 5m tergantung varietasnya.[1] Bunga ini memiliki daun tunggal lebar dan batang yang ditumbuhi
+          rambut kasar, tegak, dan jarang bercabang.
+          Bunga matahari tersusun majemuk. Terdapat dua tipe bunga: bunga tepi atau bunga lidah yang membawa satu
+          kelopak besar berwarna kuning cerah dan steril, dan bunga tabung yang fertil dan menghasilkan biji. Bunga
+          tabung ini jumlahnya bisa mencapai 2000 kuntum dalam satu tandan bunga. Penyerbukan terbuka (silang) dan
+          dibantu oleh serangga. Pada hari yang cerah, tandan bunga majemuk mengikuti pergerakan harian matahari (asal
+          nama tumbuhan ini), yang gejalanya disebut heliotropisme. Tumbuhan mendapat keuntungan 10% lebih fotosintesis
+          karena pergerakan ini.
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <!--skils-->
+  <h1>
+    <center>Skill Bunga </center>
+  </h1>
+  <div class="container-fluid mt-3">
+    <div class="row p-5 bg-light">
+      <div class="col-sm-4 bg-light text-black">
+        <button type="button" class="btn btn-primary">
+          Bunga I <span class="badge bg-danger"></span>
+        </button>
+        <p>Lorem, ipsum dolor. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
+          architecto.<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias possimus incidunt
+          voluptatem atque quam commodi?<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ea amet
+          praesentium mollitia molestiae eligendi, nemo rem adipisci quae magnam.</p>
+      </div>
+      <div class="col-sm-4 bg-light text-black">
+        <button type="button" class="btn btn-primary ">
+          Bunga II <span class="badge bg-danger"></span>
+        </button>
+        <p>Lorem, ipsum dolor. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
+          architecto.<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias possimus incidunt
+          voluptatem atque quam commodi?<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ea amet
+          praesentium mollitia molestiae eligendi, nemo rem adipisci quae magnam.</p>
+      </div>
+      <div class="col-sm-4 bg-light text-black">
+        <button type="button" class="btn btn-primary">
+          Bunga III <span class="badge bg-danger"></span>
+        </button>
+        <p>Lorem, ipsum dolor. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
+          architecto.<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias possimus incidunt
+          voluptatem atque quam commodi?<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ea amet
+          praesentium mollitia molestiae eligendi, nemo rem adipisci quae magnam.</p>
+      </div>
+
+
+    </div>
+  </div>
+  <div class="container-fluid mt-3">
+    <div class="row text-justify">
+      <div class="text-dark text-center" id="omkeh"><button type="button" class="btn" id="badge">
+          <strong>KARAKTERISTIK<span class="badge bg-danger"></span></strong>
+        </button>
+        <p><br>Bunga matahari merupakan tumbuhan terna semusim yang berasal dari Amerika Tropik bagian utara (Meksiko),
+          tinggi 3m sampai 5m tergantung varietasnya.[1] Bunga ini memiliki daun tunggal lebar dan batang yang ditumbuhi
+          rambut kasar, tegak, dan jarang bercabang.
+          Bunga matahari tersusun majemuk. Terdapat dua tipe bunga: bunga tepi atau bunga lidah yang membawa satu
+          kelopak besar berwarna kuning cerah dan steril, dan bunga tabung yang fertil dan menghasilkan biji. Bunga
+          tabung ini jumlahnya bisa mencapai 2000 kuntum dalam satu tandan bunga. Penyerbukan terbuka (silang) dan
+          dibantu oleh serangga. Pada hari yang cerah, tandan bunga majemuk mengikuti pergerakan harian matahari (asal
+          nama tumbuhan ini), yang gejalanya disebut heliotropisme. Tumbuhan mendapat keuntungan 10% lebih fotosintesis
+          karena pergerakan ini.
+        </p>
+      </div>
+      <!--skils-->
+      <!-- Card -->
+      <div class="container d-flex justify-content-evenly">
+        <div class="row">
+          <div class="col-auto">
+            <div class="card" style="width: 18rem;">
+              <img src="img/Bunga1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bunga1</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">Mempesona</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="card" style="width: 18rem;">
+              <img src="img/Bunga2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bunga2</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">Menawan</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="card" style="width: 18rem;">
+              <img src="img/Bunga3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bunga3</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">Menarik</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Alert -->
+      <div class="alert alert-primary" role="alert">
+        Bunga Matahari Sangat hebat</a>. Berikan saya suka dan subscribe.
+      </div>
+      <!-- Footer  and form-->
+      <footer class="text-center text-dark" style="background-color: #2c0d4e"></footer>
+      <div class="container pt-4">
+        <!-- Section: Social media -->
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <section class="mb-4">
+</body>
+
+</html>

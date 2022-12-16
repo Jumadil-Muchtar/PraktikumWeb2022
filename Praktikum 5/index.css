@@ -1,0 +1,50 @@
+body {
+    margin-top: 150px;
+    font-family: 'Lustria', serif;
+    background-image: url("bg11.jpg");
+    background-size: cover;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+}
+h1{
+    font-size: 60px;
+
+}
+
+#message-el{
+    font-style: 'Lustria', serif;
+}
+
+button {
+    color: #016f32;
+    width: 150 px;
+    background: whitesmoke;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    border: none;
+    border-radius: 9px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+#bet {
+    border-radius: 100px;
+    height: 34px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.reset {
+    color:black;
+    width: 150 px;
+    background: whitesmoke;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    border: none;
+    border-radius: 9px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
