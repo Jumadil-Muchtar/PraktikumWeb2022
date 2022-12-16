@@ -1,0 +1,47 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url('WWmeo3F-poker-wallpaper_fit.jpg');
+    background-size: cover;
+}
+
+body h1{
+    color: azure;
+    text-align: center;
+    font-size: 50px;
+}
+
+body h3{
+    color: azure;
+    text-align: center;
+    font-size: 30px;
+}
+
+body h4{
+    color: azure;
+    text-align: center;
+    font-size: 25px;
+}
+
+button{
+    background-color: darkblue;
+    color: azure;
+    font-size: 30px;
+   
+
+}
+
+.money{
+    display: flex;
+	flex-direction: row;
+	text-align: center;
+}
+
+
+
+
+
+
+
